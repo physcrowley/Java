@@ -1,13 +1,15 @@
 package encapsulation;
+
 /**
- * Simple encapsulation example
+ * Exemple d'encapsulation simple
  * @author David Crowley, crowlda@ecolecatholique.ca
  */
 public class Main
 {
     /**
-     * To create and use UnObjet instance, showing encapsulation
-     * of the name field
+     * Script pour créer et utiliser une instance d'objet
+     * de type UnObjet et montrer la mécanique des accesseurs
+     * et mutateurs publics.
      * @param args
      */
     public static void main(String[] args) 

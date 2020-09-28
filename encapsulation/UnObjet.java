@@ -1,8 +1,8 @@
 package encapsulation;
 
 /**
- * Example to demonstrate basic encapsulation using
- * public getters and setters for a private field.
+ * Exemple pour démontrer l'encapsulation de base au moyen
+ * d'accesseurs et de mutateurs publics pour un champ privé.
  * @author David Crowley, crowlda@ecolecatholique.ca
  */
 public class UnObjet 
@@ -13,13 +13,15 @@ public class UnObjet
 
     // méthodes publiques pour obtenir et modifier le champ
     
-    /** Public getter for the name field */
+    /** Accesseur publique pour le champ name */
     public String getName()
     {
         return this.name;
     }
 
-    /** Public setter for the name field */
+    /** Mutateur public pour le champ name 
+     * @param newName du texte 
+     */
     public void setName(final String newName)
     {
         this.name = newName;
