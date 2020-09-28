@@ -8,10 +8,11 @@ package encapsulation;
 public class UnObjet 
 {
     // champ privé
-    private String name = "Un objet";
+    private String name = "Un objet par défaut";
 
 
     // méthodes publiques pour obtenir et modifier le champ
+    
     /** Public getter for the name field */
     public String getName()
     {
