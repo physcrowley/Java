@@ -5,8 +5,8 @@ Le but est de synchroniser les changements aux fichiers de référence avec les 
 
 ## Notes sur les divers fichiers
 
-### Fichiers sans extension, compile-\<package\> et run-\<package\>
-Ces fichiers agissent comme la configuration de la compilation et de l'exécution des programmes Java. Ils incluent des arguments pour les programmes javac.exe et java.exe.
+### Fichiers sans extension, `compile-<package>` et `run-<package>`
+Ces fichiers agissent comme la configuration de la compilation et de l'exécution des programmes Java. Ils incluent des arguments pour les programmes javac.exe et java.exe. Cela nous permet de spécifier manuellement des choses qui sont fait automatiquement par un EDI comme Eclipse ou IntelliJ. Le but est de mieux comprendre comment ça fonctionne quand, éventuellemement, on utilise ces EDI comme outil principal.
 
 Ex. : On écrit à la ligne de commande :
 
