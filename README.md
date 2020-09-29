@@ -1,5 +1,5 @@
 # Fichiers pour le cours ICS4U
-Ce dossier contient les exemples de code partagés avec les élèves.
+Ce dossier contient les exemples de code partagés avec les élèves. Tout le code source (les fichiers .java) sont dans le dossier `src`.
 
 Le but est de synchroniser les changements aux fichiers de référence avec les documents partagés sur le [site du cours](https://sites.google.com/a/ecolecatholique.ca/crowley/ic4u) sans avoir à modifier les liens aux documents.
 
@@ -36,12 +36,7 @@ où la classe `recursion.BookStore` définit la méthode `main` pour le programm
 ### Fichiers .cmd
 Ces fichiers servent comme remplacement aux commandes `javac`, `java`, `javadoc`, etc. quand les variables PATH sur les postes de l'école ne sont pas configurées correctement. P.ex. je fichier java-c.cmd contient ce que normalement on aurait comme variable PATH, soit `%JAVA_HOME%\bin` plus la commande `%*`  qui accepte les arguments typiques pour la compilation qui suivent sur la ligne.
 
-Voici le contenu du fichier java-c.cmd
-```
-@"C:\Program Files\Java\jdk-11\bin\javac.exe" %*
-```
-
-Voici comment l'utiliser avec un fichier de configuration manuelle :
+Voici le contenu du fichier java-c.cmd : `@"C:\Program Files\Java\jdk-11\bin\javac.exe" %*`. Voici comment l'utiliser avec un fichier de configuration manuelle :
 ```
 java-c.cmd @compile-recursion
 ```
