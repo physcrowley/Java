@@ -5,10 +5,7 @@ Le but est de synchroniser les changements aux fichiers de référence avec les 
 
 ## Notes sur les divers fichiers
 
-### Fichiers .cmd
-Ces fichiers servent comme remplacement aux commandes javac, java, javadoc, etc. quand les variables PATH sur les postes de l'école ne sont pas configurées correctement.
-
-### Fichiers sans extension, compile-... et run-...
+### Fichiers sans extension, compile-\<package\> et run-\<package\>
 Ces fichiers agissent comme la configuration de la compilation et de l'exécution des programmes Java. Ils incluent des arguments pour les programmes javac.exe et java.exe.
 
 Ex. : On écrit à la ligne de commande :
@@ -18,9 +15,9 @@ Ex. : On écrit à la ligne de commande :
 Le fichier `compile-recursion` inclut les lignes suivantes, chaque ligne étant un argument pour le programme javac.exe :
 ```
 -d bin
-recursion\Categories.java
-recursion\Category.java
-recursion\BookStore.java
+src\recursion\Categories.java
+src\recursion\Category.java
+src\recursion\BookStore.java
 ```
 Si d'autres packages ou classes sont ajoutés au projet, ils peuvent être ajoutés au fichier `compile-recursion` sans changer l'appel à la ligne de commande.
 
@@ -36,10 +33,34 @@ où la classe `recursion.BookStore` définit la méthode `main` pour le programm
 
 **Pourquoi?** Travailler avec ces fichiers de configuration "maison" aidera les élèves à comprendre la raison d'être des fichiers de configuration plus complexes utilisés dans Eclipse, dans des projets Maven, etc. lorsqu'ils passent au développement logiciel avec les EDI.
 
-### Classes et packages
-Parce que le code source est souvent un exemple pour expliquer un seul concept, la plupart des classes sont indépendantes et se trouvent directment à la racine de l'espace de travail.
+### Fichiers .cmd
+Ces fichiers servent comme remplacement aux commandes `javac`, `java`, `javadoc`, etc. quand les variables PATH sur les postes de l'école ne sont pas configurées correctement. P.ex. je fichier java-c.cmd contient ce que normalement on aurait comme variable PATH, soit `%JAVA_HOME%\bin` plus la commande `%*`  qui accepte les arguments typiques pour la compilation qui suivent sur la ligne.
 
-Par contre, lorsqu'un exemple nécessite plusieurs classes - comme lors de discussions de méthodes et de la programmation orienté objet - ou plusieurs ressources - comme des images ou sons, l'exemple au complet est placé dans un package.
+Voici le contenu du fichier java-c.cmd
+```
+@"C:\Program Files\Java\jdk-11\bin\javac.exe" %*
+```
+
+Voici comment l'utiliser avec un fichier de configuration manuelle :
+```
+java-c.cmd @compile-recursion
+```
+ou simplement :
+```
+java-c @compile-recursion
+```
+
+Voici comment l'utiliser avec un fichier qui est dans le même dossier que le fichier java-c.cmd :
+```
+java-c Classe.java
+```
+
+Le fichier `java-r.cmd` agit de façon similaire pour remplacer la commande `java`.
+
+### Classes et packages
+Parce que le code source est souvent un exemple pour expliquer un seul concept, la plupart des classes sont indépendantes et se trouvent directment à la racine du code source, soit directement dans le dossier `src`.
+
+Par contre, lorsqu'un exemple nécessite plusieurs classes - comme lors de discussions de méthodes et de la programmation orienté objet - ou plusieurs ressources - comme des images ou sons, l'exemple au complet est placé dans un package à l'intérieur du dossier `src`.
 
 ### Fichiers Python
 Parfois l'aspect conceptuel est dense et je veux réduire les considérations syntaxiques alors je présente l'exemple avec un script Python au lieu d'une classe Java.
