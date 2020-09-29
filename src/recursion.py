@@ -16,7 +16,7 @@ def multiply(a, b):
     return a + multiply(a, b - 1)
 
 def remainder(a, b):
-    """ Recursive calculation of the remainder (modulo) from integer division """
+    """ Recursive calculation of the remainder (%, modulo) from integer division """
     
     if a < b:
         return a
