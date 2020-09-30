@@ -1,4 +1,5 @@
 // On veut cacher le mécanisme d'exécution derrière un seul nom
+
 /**
  * Exemples de fonctions et de méthodes sur des objets
  *
