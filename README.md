@@ -6,13 +6,13 @@ Le but est de synchroniser les changements aux fichiers de référence avec les 
 ## Notes sur les divers fichiers
 
 ### Fichiers sans extension, compile-\<package\> et run-\<package\>
-Ces fichiers agissent comme la configuration de la compilation et de l'exécution des programmes Java. Ils incluent des arguments pour les programmes javac.exe et java.exe.
+Ces fichiers sont pour **configurer** la compilation et l'exécution des programmes Java. Ils incluent des arguments pour les programmes `javac.exe` et `java.exe`.
 
 Ex. : On écrit à la ligne de commande :
 
 `javac @compile-recursion`
 
-Le fichier `compile-recursion` inclut les lignes suivantes, chaque ligne étant un argument pour le programme javac.exe :
+Le fichier `compile-recursion` inclut les lignes suivantes, chaque ligne étant un argument pour le programme `javac.exe` :
 ```
 -d bin
 src\recursion\Categories.java
@@ -24,7 +24,7 @@ Si d'autres packages ou classes sont ajoutés au projet, ils peuvent être ajout
 Finalement, on peut écrire à la ligne de commande :
 `java @run-recursion`
 
-Le fichier `run-recursion` incluant les arguments suivants pour le programme java.exe :
+Le fichier `run-recursion` inclut les arguments suivants pour le programme `java.exe` :
 ```
 -cp bin
 recursion.BookStore
@@ -34,9 +34,9 @@ où la classe `recursion.BookStore` définit la méthode `main` pour le programm
 **Pourquoi?** Travailler avec ces fichiers de configuration "maison" aidera les élèves à comprendre la raison d'être des fichiers de configuration plus complexes utilisés dans Eclipse, dans des projets Maven, etc. lorsqu'ils passent au développement logiciel avec les EDI.
 
 ### Fichiers .cmd
-Ces fichiers servent comme remplacement aux commandes `javac`, `java`, `javadoc`, etc. quand les variables PATH sur les postes de l'école ne sont pas configurées correctement. P.ex. je fichier java-c.cmd contient ce que normalement on aurait comme variable PATH, soit `%JAVA_HOME%\bin` plus la commande `%*`  qui accepte les arguments typiques pour la compilation qui suivent sur la ligne.
+Ces fichiers servent comme remplacement aux commandes `javac`, `java`, `javadoc`, etc. quand les variables PATH sur les postes de l'école ne sont pas configurées correctement. P.ex. le fichier `java-c.cmd` contient ce que normalement on aurait comme variable PATH, soit `%JAVA_HOME%\bin` plus la commande `%*`  qui accepte les arguments typiques pour la compilation qui suivent sur la ligne.
 
-Voici le contenu du fichier java-c.cmd : `@"C:\Program Files\Java\jdk-11\bin\javac.exe" %*`. Voici comment l'utiliser avec un fichier de configuration manuelle :
+Voici le contenu du fichier `java-c.cmd` : `@"C:\Program Files\Java\jdk-11\bin\javac.exe" %*`. Voici comment l'utiliser avec un des fichiers de configuration :
 ```
 java-c.cmd @compile-recursion
 ```
@@ -45,7 +45,7 @@ ou simplement :
 java-c @compile-recursion
 ```
 
-Voici comment l'utiliser avec un fichier qui est dans le même dossier que le fichier java-c.cmd :
+Voici comment l'utiliser avec un fichier qui est dans le même dossier que le fichier `java-c.cmd` :
 ```
 java-c Classe.java
 ```
