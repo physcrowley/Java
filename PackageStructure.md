@@ -50,7 +50,7 @@ ProjetSimple
 
 LIGNE DE COMMANDE (pour compiler) :
 
-`~ProjetSimple > javac Main.java`
+`~ProjetSimple> javac Main.java`
 
 RÉSULTAT:
 ```
@@ -61,7 +61,7 @@ ProjetSimple
 
 LIGNE DE COMMANDE (pour exécuter) :
 
-`~ProjetSimple > java Main`
+`~ProjetSimple> java Main`
 
 ## Cas simple **avec** structure interne
 
@@ -88,7 +88,7 @@ Quand on a une structure avec des packages, on utilise les arguments `-d` et `-c
 
 LIGNE DE COMMANDE (pour compiler) :
 
-`~ProjetReel > javac -d bin src\projetSimple\Main.java`
+`~ProjetReel> javac -d bin src\projetSimple\Main.java`
 
 RÉSULTAT:
 ```
@@ -103,9 +103,9 @@ ProjetReel
 
 LIGNE DE COMMANDE (pour exécuter) :
 
-`~ProjetReel > java Main` > erreur - ne trouve pas la classe Main
+`~ProjetReel> java Main` > erreur - ne trouve pas la classe Main
 
-`~ProjetReel > java -cp bin Main` > erreur - ne trouve pas la classe Main (bonne classpath, mais mauvais package)
+`~ProjetReel> java -cp bin Main` > erreur - ne trouve pas la classe Main (bonne classpath, mais mauvais package)
 
 `~ProjetReel > java -cp bin projetSimple.Main` 
 
@@ -128,7 +128,7 @@ LIGNE DE COMMANDE (pour compiler) :
 *Option manuel* :
  
 
-`~ProjetReel > javac -d bin src\projetObjets\UnObjet.java src\projetObjets\UnAutreObjet.java src\projetObjets\Main.java` 
+`~ProjetReel> javac -d bin src\projetObjets\UnObjet.java src\projetObjets\UnAutreObjet.java src\projetObjets\Main.java` 
 
 (Wow! Essaye de ne pas faire d'erreur!)
 
@@ -146,7 +146,7 @@ src\projetObjets\Main.java
 
 À la ligne de commande :
 
-`~ProjetReel > javac @compile-projetObjets`
+`~ProjetReel> javac @compile-projetObjets`
 
 
 RÉSULTAT:
@@ -157,7 +157,7 @@ LIGNE DE COMMANDE (pour exécuter) :
 
 *Manuellement* :
 
-`~ProjetReel > java -cp bin projetObjets.Main`
+`~ProjetReel> java -cp bin projetObjets.Main`
 
 *Avec fichier de configuration* :
 
@@ -169,4 +169,4 @@ projetObjets.Main
 
 À la ligne de commande :
 
-`~ProjetReel > java @run-projetObjets`
+`~ProjetReel> java @run-projetObjets`
