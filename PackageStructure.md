@@ -37,7 +37,7 @@ Workspace
 │     └sousPackage
 │         ├UnObjet.class
 │         └UnAutreObjet.class
-├assets
+└assets
 ```
 
 # Comment compiler et exécuter tout ça?
@@ -69,9 +69,9 @@ STRUCTURE DU PROJET
 ```
 ProjetReel
 ├src
-│  ├projetSimple
-│     ├Main.java (package projetSimple;)
-├bin
+│  └projetSimple
+│     └Main.java (package projetSimple;)
+└bin
 ```
 
 COMMANDES JAVA UTILES
@@ -94,11 +94,11 @@ RÉSULTAT:
 ```
 ProjetReel
 ├src
-│  ├projetSimple
-│     ├Main.java (package projetSimple;)
-├bin
-│  ├projetSimple
-│     ├Main.class
+│  └projetSimple
+│     └Main.java (package projetSimple;)
+└bin
+   └projetSimple
+      └Main.class
 ```
 
 LIGNE DE COMMANDE (pour exécuter) :
@@ -116,12 +116,12 @@ STRUCTURE DU PROJET
 ```
 ProjetReel
 ├src
-│  ├projetObjets
+│  └projetObjets
 │     ├Main.java (package projetSimple;)
 │     ├UnObjet.java
 │     ├UnAutreObjet.java
 │     └UnTroisiemeObjet.java
-├bin
+└bin
 ```
 LIGNE DE COMMANDE (pour compiler) :
 
