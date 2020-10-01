@@ -1,4 +1,4 @@
 -d bin
-src\recursion\Categories.java
-src\recursion\Category.java
-src\recursion\BookStore.java
+src/recursion/Categories.java
+src/recursion/Category.java
+src/recursion/BookStore.java

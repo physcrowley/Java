@@ -1,3 +1,3 @@
 -d bin 
-src\encapsulation\UnObjet.java 
-src\encapsulation\Main.java
+src/encapsulation/UnObjet.java 
+src/encapsulation/Main.java

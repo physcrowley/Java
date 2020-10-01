@@ -126,7 +126,6 @@ ProjetReel
 LIGNE DE COMMANDE (pour compiler) :
 
 *Option manuel* :
- 
 
 `~ProjetReel> javac -d bin src/projetObjets/UnObjet.java src/projetObjets/UnAutreObjet.java src/projetObjets/Main.java` 
 
@@ -143,6 +142,7 @@ src/projetObjets/UnAutreObjet.java
 src/projetObjets/UnTroisiemeObjet.java
 src/projetObjets/Main.java
 ```
+*--> NOTE : les / sont tous vers l'avant, l'opposé de ce qu'on doit utiliser pour les commandes Windows (\\). C'est parce que les commandes `javac` et `java` interprètent les arguments, pas Windows. On peut, en fait, utiliser l'une ou l'autre avec javac et java. Parce que les systèmes Mac et Linux utilisent par défaut le /, c'est préférable d'écrire les fichiers de configuration avec le symbole / pour réduire les erreurs possibles si on partage nos fichiers.*
 
 À la ligne de commande :
 

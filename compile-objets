@@ -1,3 +1,3 @@
 -d bin 
-src\objets\Personne.java 
-src\objets\Main.java
+src/objets/Personne.java 
+src/objets/Main.java
