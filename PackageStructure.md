@@ -88,7 +88,7 @@ Quand on a une structure avec des packages, on utilise les arguments `-d` et `-c
 
 LIGNE DE COMMANDE (pour compiler) :
 
-`~ProjetReel> javac -d bin src\projetSimple\Main.java`
+`~ProjetReel> javac -d bin src/projetSimple/Main.java`
 
 RÉSULTAT:
 ```
@@ -128,7 +128,7 @@ LIGNE DE COMMANDE (pour compiler) :
 *Option manuel* :
  
 
-`~ProjetReel> javac -d bin src\projetObjets\UnObjet.java src\projetObjets\UnAutreObjet.java src\projetObjets\Main.java` 
+`~ProjetReel> javac -d bin src/projetObjets/UnObjet.java src/projetObjets/UnAutreObjet.java src/projetObjets/Main.java` 
 
 (Wow! Essaye de ne pas faire d'erreur!)
 
@@ -138,10 +138,10 @@ Dans un fichier qui s'appelle `compile-projetObjets` >
 
 ```
 -d bin
-src\projetObjets\UnObjet.java
-src\projetObjets\UnAutreObjet.java
-src\projetObjets\UnTroisiemeObjet.java
-src\projetObjets\Main.java
+src/projetObjets/UnObjet.java
+src/projetObjets/UnAutreObjet.java
+src/projetObjets/UnTroisiemeObjet.java
+src/projetObjets/Main.java
 ```
 
 À la ligne de commande :
