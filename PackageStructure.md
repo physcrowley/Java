@@ -107,7 +107,7 @@ LIGNE DE COMMANDE (pour exécuter) :
 
 `~ProjetReel> java -cp bin Main` > erreur - ne trouve pas la classe Main (bonne classpath, mais mauvais package)
 
-`~ProjetReel > java -cp bin projetSimple.Main` 
+`~ProjetReel> java -cp bin projetSimple.Main` 
 
 
 ## Cas avec **plusieurs** fichiers .java et/ou packages
