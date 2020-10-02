@@ -1,3 +1,4 @@
+blah
 # Structure des dossiers 
 
 Tout espace de travail devrait avoir ces trois groupes de dossiers à la racine :
