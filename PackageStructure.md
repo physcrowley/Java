@@ -4,8 +4,8 @@ Tout espace de travail devrait avoir ces trois groupes de dossiers à la racine 
 * `src` 
     * tous les packages et le code source (fichiers .java)
 * `bin`/`out`
-    * tous les fichiers compilés (.class, binaires) avec la structure des packages dans le dossier src
-    * séparés pour un éventuel emballage pour partager le programme (.jar)
+    * tous les fichiers compilés (.class en bytecode) suivant la structure des packages dans le dossier src
+    * séparés du code source pour un éventuel emballage (.jar) afin de partager le programme
 * `assets` 
     * images et sons, etc. nécessaires pour différentes parties du programme 
 
@@ -89,6 +89,8 @@ Quand on a une structure avec des packages, on utilise les arguments `-d` et `-c
 LIGNE DE COMMANDE (pour compiler) :
 
 `~ProjetReel> javac -d bin src/projetSimple/Main.java`
+* `-d bin` > place les fichiers dans le dossier `bin`
+* `src/projetSimple/Main.java` > chemin relatif au dossier actuel pour trouver le fichier à compiler
 
 RÉSULTAT:
 ```
@@ -108,6 +110,8 @@ LIGNE DE COMMANDE (pour exécuter) :
 `~ProjetReel> java -cp bin Main` > erreur - ne trouve pas la classe Main (bonne classpath, mais mauvais package)
 
 `~ProjetReel> java -cp bin projetSimple.Main` 
+* `-cp bin` > indique que les classes se trouvent dans le dossier `bin`
+* `projetSimple.Main` > la classe à exécuter avec sa designation complète (`<package>.<sousPackage>.<...>.<Classe>`)
 
 
 ## Cas avec **plusieurs** fichiers .java et/ou packages
@@ -142,7 +146,7 @@ src/projetObjets/UnAutreObjet.java
 src/projetObjets/UnTroisiemeObjet.java
 src/projetObjets/Main.java
 ```
-*--> NOTE : les / sont tous vers l'avant, l'opposé de ce qu'on doit utiliser pour les commandes Windows (\\). C'est parce que les commandes `javac` et `java` interprètent les arguments, pas Windows. On peut, en fait, utiliser l'une ou l'autre avec javac et java. Parce que les systèmes Mac et Linux utilisent par défaut le /, c'est préférable d'écrire les fichiers de configuration avec le symbole / pour réduire les erreurs possibles si on partage nos fichiers.*
+*--> NOTE : les / sont tous vers l'avant, l'opposé de ce qu'on doit utiliser pour les commandes Windows (\\). C'est parce que les commandes `javac` et `java` interprètent les arguments, pas Windows. On peut, en fait, utiliser l'une ou l'autre avec javac et java. Parce que les systèmes Mac et Linux utilisent par défaut le /, c'est préférable d'écrire les fichiers de configuration avec le symbole / pour réduire les erreurs possibles si on partage nos fichiers (interopérabilité).*
 
 À la ligne de commande :
 
