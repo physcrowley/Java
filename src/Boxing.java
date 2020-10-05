@@ -14,10 +14,11 @@ class Boxing
 
         String num = "23";
         int number = Integer.parseInt(num); //parseInt est une méthode de l'objet Integer
-        Integer numberObject = number; //converti ("boxes") un int en objet Integer automatiquement
+        Integer numberObject = number; 
+            //converti ("boxes") un int en objet Integer automatiquement
         
         System.out.printf("int : %d, Integer: %d\n", number, numberObject);
-            // pour place l'Integer dans la chaîne de texte, il est converti ("deboxed")
+            // pour placer l'Integer dans la chaîne de texte, il est converti ("deboxed")
             // en int automatiquement
         System.out.println(numberObject.getClass()); 
             // ont peut faire ça avec les objets mais pas les types natifs comme int
