@@ -4,23 +4,16 @@ public class Strings
     {
         String myString = "3,4,5,,6,7,8,9 10";
         System.out.println(myString);
+
         String[] halves = myString.split(","); // break into bits using a separator character
         System.out.println("Substrings separated by ,");
-        for(String st : halves)
-        {
-            System.out.println(st);
-        }
-
+        for(String st : halves)  System.out.println(st);
         
         String[] subs = recursiveStrSplitter(myString, ",; ");
         System.out.println("Substrings separated by , ; and <space> recursively");
-        for(String st : subs)
-        {
-            System.out.println(st);
-        }
+        for(String st : subs) System.out.println(st);
         System.out.println("=========");
         
-
         System.out.println(myString.length()); // number of characters
 
         System.out.println(myString.substring(3)); // from index 3 (4th character) to the end
