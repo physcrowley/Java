@@ -22,21 +22,30 @@ public class HashMaps
             System.out.println("Enter a name and favourite number, separated by a comma");
             answers = in.nextLine().split(",");
             name = answers[0];
-            favNum = Integer.parseInt(answers[1]);
-            if (favNumbers.containsKey(name)) System.out.println("Name already exists");
-            else 
+            favNum = Integer.parseInt(answers[1].strip());
+            if (favNumbers.containsKey(name)) System.out.println("Name already exists"); // message d'erreur
+            else // ajouter le nom et le nombre
             {
                 favNumbers.put(name, favNum);
                 System.out.println("Entry added to database");
             }
-            System.out.println("Enter a new set?");
             
+            System.out.println("Enter a new set? (Y/N)");
+            if (!in.nextLine().toLowerCase().equals("y")) 
+            {
+                getfavNumbers = false;
+                System.out.println("End of data entry\n============================");
+            }
+
         }
+        /*
         favNumbers.put("David", 9);
         favNumbers.put("Joseph", 3);
-        favNumbers.put("Joseph", 6);
+        favNumbers.put("Joseph", 6); // remplace la valeur 3 avec 6
+        */
 
         System.out.println(favNumbers.get("Joseph"));
 
+        in.close();
     }
 }
