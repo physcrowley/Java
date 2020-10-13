@@ -6,10 +6,10 @@ public class Elderly extends Person
 {
     String retirementActivity;
 
-    Elderly(String n, int a, String o, String A)
+    Elderly(String n, int a, String A)
     {
-        super(n, a, o);
-        this.occupation = "retired";
+        super(n, a, "retired"); 
+            // donner par défaut la valeur "retired" pour l'occupation
         this.retirementActivity = A;
     }
 
