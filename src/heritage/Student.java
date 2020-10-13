@@ -9,9 +9,11 @@ public class Student extends Person
     Student(String n, int a, String o, double m)
     {
         super(n, a, o); 
-            // utiliser le constructeur du niveau supérieur dans la hiérarchie
+            // super > utiliser le constructeur du niveau supérieur dans la hiérarchie
+            // dans ce cas-ci, on utilise le constructeur de Person pour initialiser
+            // les valeurs de name, age et occupation.
             // voir aussi : https://docs.oracle.com/javase/tutorial/java/IandI/super.html
-        this.moyenne = m;
+        this.moyenne = m; // et on intitialise spécifiquement pour Student la moyenne
     }
 
     public void study()
