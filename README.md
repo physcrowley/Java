@@ -15,9 +15,9 @@ Ex. : On écrit à la ligne de commande :
 Le fichier `compile-recursion` inclut les lignes suivantes, chaque ligne étant un argument pour le programme `javac.exe` :
 ```
 -d bin
-src\recursion\Categories.java
-src\recursion\Category.java
-src\recursion\BookStore.java
+src/recursion/Categories.java
+src/recursion/Category.java
+src/recursion/BookStore.java
 ```
 Si d'autres packages ou classes sont ajoutés au projet, ils peuvent être ajoutés au fichier `compile-recursion` sans changer l'appel à la ligne de commande.
 
@@ -36,7 +36,7 @@ où la classe `recursion.BookStore` définit la méthode `main` pour le programm
 ### Fichiers .cmd
 Ces fichiers servent comme remplacement aux commandes `javac`, `java`, `javadoc`, etc. quand les variables PATH sur les postes de l'école ne sont pas configurées correctement. P.ex. le fichier `java-c.cmd` contient ce que normalement on aurait comme variable PATH, soit `%JAVA_HOME%\bin` plus la commande `%*`  qui accepte les arguments typiques pour la compilation qui suivent sur la ligne.
 
-Voici le contenu du fichier `java-c.cmd` : `@"C:\Program Files\Java\jdk-11\bin\javac.exe" %*`. Voici comment l'utiliser avec un des fichiers de configuration :
+Voici le contenu du fichier `java-c.cmd` : `@"C:/Program Files/Java/jdk-11/bin/javac.exe" %*`. Voici comment l'utiliser avec un des fichiers de configuration :
 ```
 java-c.cmd @compile-recursion
 ```
