@@ -24,7 +24,6 @@ public class Strings
         System.out.println(myString.indexOf("8,9 10")); // returns first index of substring matching the reference String 
         System.out.println(myString.indexOf("A")); // not there, returns -1
 
-
     }
 
     /**
