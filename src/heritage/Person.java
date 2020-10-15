@@ -1,6 +1,6 @@
 package heritage;
 
-public class Person
+public abstract class Person
 {
     // champs
     String name;
