@@ -1,7 +1,5 @@
 package interfaces;
 
-import interfaces.Person;
-
 public class Retiree extends Person 
 {
     Retiree()
@@ -14,7 +12,7 @@ public class Retiree extends Person
     Retiree(String n, int a)
     {
         super(n, a);
-        this.occupation = new Studying();
+        this.occupation = new Retiring();
     }
 
     Retiree(String n, int a, Working o)
@@ -22,5 +20,4 @@ public class Retiree extends Person
         super(n, a, o);
     }
     
-
 }

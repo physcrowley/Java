@@ -1,7 +1,5 @@
 package interfaces;
 
-import interfaces.Person;
-
 public class Student extends Person 
 {
     Student()

@@ -1,7 +1,5 @@
 package interfaces;
 
-import java.util.HashMap;
-
 public class Main {
     public static void main(final String[] args) 
     {
@@ -22,8 +20,5 @@ public class Main {
         }
         
         System.out.println(persons[0].getName());
-
-        
     }
-    
 }

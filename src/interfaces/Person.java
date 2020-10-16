@@ -1,7 +1,5 @@
 package interfaces;
 
-import interfaces.*;
-
 public abstract class Person 
 {
     protected String name = "";

@@ -1,12 +1,11 @@
 package interfaces;
 
-import interfaces.Person;
-
+/** This is the prototype of the Person class - all default values */
 public class Employee extends Person 
 {
     Employee()
     {
-        super(); // occupation is already WorkingHard
+        super();
     }
     
     Employee(String n, int a)
