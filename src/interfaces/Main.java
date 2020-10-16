@@ -11,14 +11,15 @@ public class Main {
             new Teacher("David", 39)
         }; // polymorphism
 
-        persons[3].occupation = new Retiring();
+        persons[3].setOccupation(new Retiring());
 
         for (Person p : persons)
         {
-            System.out.print(p.name + " : ");
+            System.out.print(p.getName() + " : ");
             p.goToWork();
         }
         
         System.out.println(persons[0].getName());
+        System.out.println(Person.getPeople());
     }
 }

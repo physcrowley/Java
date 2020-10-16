@@ -2,11 +2,12 @@ package interfaces;
 
 public abstract class Person 
 {
+    // protected > seulement accessible à l'intérieur de la classe
     protected String name = "";
     protected int age = 0;
     protected Working occupation = new WorkingHard();
 
-    static protected int people = 0; // variable de class (pas d'instance)
+     protected static int people = 0; // variable de class (pas d'instance)
 
 
     /** Constructeur par défaut */
@@ -67,7 +68,7 @@ public abstract class Person
 
     
     /////////////////// Accesseurs /////////////////////
-    public int getPeople()
+    public static int getPeople()
     {
         return people;
     }
