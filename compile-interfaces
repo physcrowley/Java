@@ -1,0 +1,15 @@
+-d bin
+
+src/interfaces/Working.java
+src/interfaces/Studying.java
+src/interfaces/WorkingHard.java
+src/interfaces/Retiring.java
+src/interfaces/Teaching.java
+
+src/interfaces/Person.java
+src/interfaces/Student.java
+src/interfaces/Teacher.java
+src/interfaces/Employee.java
+src/interfaces/Retiree.java
+
+src/interfaces/Main.java
