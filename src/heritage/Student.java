@@ -1,7 +1,5 @@
 package heritage;
 
-import heritage.Person;
-
 public class Student extends Person 
 {
     double moyenne;

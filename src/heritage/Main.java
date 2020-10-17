@@ -1,9 +1,5 @@
 package heritage;
 
-import heritage.Elderly;
-import heritage.Person;
-import heritage.Student;
-
 public class Main 
 {
     public static void main(final String[] args) 

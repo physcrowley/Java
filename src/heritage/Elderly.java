@@ -1,7 +1,5 @@
 package heritage;
 
-import heritage.Person;
-
 public class Elderly extends Person
 {
     String retirementActivity;
