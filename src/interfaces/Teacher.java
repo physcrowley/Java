@@ -10,7 +10,7 @@ public class Teacher extends Person
     Teacher(String n, int a)
     {
         super(n, a);
-        this.occupation = new Studying();
+        this.occupation = new Teaching();
     }
 
     Teacher(String n, int a, Working o)
