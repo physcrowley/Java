@@ -1,7 +1,5 @@
 package interfaces;
 
-import interfaces.Working;
-
 public class WorkingHard implements Working
 {
     public void work()
