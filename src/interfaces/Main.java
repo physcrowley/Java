@@ -12,6 +12,8 @@ public class Main {
         }; // polymorphism
 
         persons[3].setOccupation(new Retiring());
+        System.out.println(persons[2].name); // tester le mot clé "private" et "protected"
+            // si protected protège correctement, cette ligne devrait générer une erreur
 
         for (Person p : persons)
         {
