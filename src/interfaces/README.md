@@ -1,4 +1,4 @@
-faire un exemple qui utilise bien les interface et créer les diagrammes UML
+faire un exemple qui utilise bien les interfaces et créer les diagrammes UML
 
 > on veut mettre les comportements dans des interfaces
 > on veut utiliser l'héritage et le polymorphisme pour gérer nos objets
