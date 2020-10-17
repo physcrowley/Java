@@ -1,8 +1,8 @@
+# objectif
 faire un exemple qui utilise bien les interfaces et créer les diagrammes UML
 
-> on veut mettre les comportements dans des interfaces
-> on veut utiliser l'héritage et le polymorphisme pour gérer nos objets
-
+* on veut mettre les comportements dans des interfaces
+* on veut utiliser l'héritage et le polymorphisme pour gérer nos objets
 
 # idées
 RPG > différents personnages
