@@ -14,7 +14,7 @@ public class Main {
             new Teacher("David", 39)
         }; // polymorphism
 
-        persons[3].setOccupation(new Retire());
+        persons[1].setOccupation(new Retire());
         //System.out.println(persons[2].name); // tester le mot clé "protected"
             // si protected protège correctement, cette ligne devrait générer une erreur
 
@@ -25,6 +25,7 @@ public class Main {
         }
         
         System.out.println(persons[0].getName());
+        System.out.println(persons[3]);
         System.out.println(Person.getPeople());
     }
 }
