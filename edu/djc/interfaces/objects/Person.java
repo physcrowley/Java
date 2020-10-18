@@ -108,6 +108,9 @@ public abstract class Person
         return this.occupation;
     }
 
+    /**
+     * For easier, cleaner printing of Person object data
+     */
     @Override
     public String toString() 
     {
