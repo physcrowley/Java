@@ -1,6 +1,7 @@
 package edu.djc.interfaces.objets;
 
-import edu.djc.interfaces.comportements.*;
+import edu.djc.interfaces.behaviours.*;
+import edu.djc.interfaces.objets.Person;
 
 /** This is the prototype of the Person class - all default values */
 public class Employee extends Person 

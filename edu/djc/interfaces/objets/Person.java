@@ -1,13 +1,13 @@
 package edu.djc.interfaces.objets;
 
-import edu.djc.interfaces.comportements.*;
+import edu.djc.interfaces.behaviours.*;
 
 public abstract class Person 
 {
     // protected > seulement accessible à l'intérieur du package
     protected String name = "";
     protected int age = 0;
-    protected Working occupation = new WorkingHard();
+    protected Working occupation = new Work();
 
     protected static int people = 0; // variable de class (pas d'instance)
 

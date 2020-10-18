@@ -1,6 +1,6 @@
 package edu.djc.interfaces.objets;
 
-import edu.djc.interfaces.comportements.*;
+import edu.djc.interfaces.behaviours.*;
 
 public class Retiree extends Person 
 {

@@ -1,6 +1,6 @@
 package edu.djc.interfaces;
 
-import edu.djc.interfaces.comportements.*;
+import edu.djc.interfaces.behaviours.*;
 import edu.djc.interfaces.objets.*;
 
 public class Main {
@@ -14,7 +14,7 @@ public class Main {
             new Teacher("David", 39)
         }; // polymorphism
 
-        persons[3].setOccupation(new Retiring());
+        persons[3].setOccupation(new Retire());
         //System.out.println(persons[2].name); // tester le mot clé "protected"
             // si protected protège correctement, cette ligne devrait générer une erreur
 

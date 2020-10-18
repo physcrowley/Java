@@ -1,4 +1,4 @@
-package edu.djc.interfaces.comportements;
+package edu.djc.interfaces.behaviours;
 
 public class Retiring implements Working
 {

@@ -1,6 +1,6 @@
-package edu.djc.interfaces.comportements;
+package edu.djc.interfaces.behaviours;
 
-public class Teaching implements Working
+public class Teach implements Working
 {
     public void work()
     {

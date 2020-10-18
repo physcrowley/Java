@@ -1,10 +1,10 @@
 -d bin
 
-edu/djc/interfaces/comportements/Working.java
-edu/djc/interfaces/comportements/Studying.java
-edu/djc/interfaces/comportements/WorkingHard.java
-edu/djc/interfaces/comportements/Retiring.java
-edu/djc/interfaces/comportements/Teaching.java
+edu/djc/interfaces/behaviours/Working.java
+edu/djc/interfaces/behaviours/Study.java
+edu/djc/interfaces/behaviours/Work.java
+edu/djc/interfaces/behaviours/Retire.java
+edu/djc/interfaces/behaviours/Teach.java
 
 edu/djc/interfaces/objets/Person.java
 edu/djc/interfaces/objets/Student.java
