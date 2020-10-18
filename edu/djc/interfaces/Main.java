@@ -1,14 +1,14 @@
 package edu.djc.interfaces;
 
 import edu.djc.interfaces.behaviours.*;
-import edu.djc.interfaces.objets.*;
+import edu.djc.interfaces.objects.*;
 
 public class Main {
     public static void main(final String[] args) 
     {
         Person[] persons = 
         {
-            new Student("Sebastian", 17), 
+            new Student("Sebastian", 17),
             new Employee("Janette", 32), 
             new Retiree("Roger", 72),
             new Teacher("David", 39)

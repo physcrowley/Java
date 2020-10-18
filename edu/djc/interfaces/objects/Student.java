@@ -1,22 +1,23 @@
-package edu.djc.interfaces.objets;
+package edu.djc.interfaces.objects;
 
 import edu.djc.interfaces.behaviours.*;
 
 public class Student extends Person 
 {
-    Student()
+    public Student()
     {
+        super();
         this.occupation = new Study();
     }
     
-    Student(String n, int a)
-    {
+    public Student(String n, int a)
+    {   
         super(n, a);
         this.occupation = new Study();
     }
     
-    Student(String n, int a, Working o)
-    {
+    public Student(String n, int a, Working o)
+    { 
         super(n, a, o);
     }
 }

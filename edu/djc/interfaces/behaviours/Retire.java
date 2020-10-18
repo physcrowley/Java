@@ -1,6 +1,6 @@
 package edu.djc.interfaces.behaviours;
 
-public class Retiring implements Working
+public class Retire implements Working
 {
     public void work()
     {

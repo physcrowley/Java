@@ -1,4 +1,4 @@
-package edu.djc.interfaces.objets;
+package edu.djc.interfaces.objects;
 
 import edu.djc.interfaces.behaviours.*;
 
@@ -13,7 +13,7 @@ public abstract class Person
 
 
     /** Constructeur par défaut */
-    Person()
+    public Person()
     {
         people++; // compte le nombre d'instances de Person
     }
@@ -24,7 +24,7 @@ public abstract class Person
      * @param n le nom de la Person
      * @param a l'age de la Person
      */
-    Person(String n, int a)
+    public Person(String n, int a)
     {
         people++; // compte le nombre d'instances de Person
         this.name = n;
@@ -36,7 +36,7 @@ public abstract class Person
      * @param a l'age de la Person
      * @param o l'occupation de la Person
      */
-    Person(String n, int a, Working o)
+    public Person(String n, int a, Working o)
     {
         people++; // compte le nombre d'instances de Person
         this.name = n;

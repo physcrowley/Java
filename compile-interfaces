@@ -6,10 +6,10 @@ edu/djc/interfaces/behaviours/Work.java
 edu/djc/interfaces/behaviours/Retire.java
 edu/djc/interfaces/behaviours/Teach.java
 
-edu/djc/interfaces/objets/Person.java
-edu/djc/interfaces/objets/Student.java
-edu/djc/interfaces/objets/Teacher.java
-edu/djc/interfaces/objets/Employee.java
-edu/djc/interfaces/objets/Retiree.java
+edu/djc/interfaces/objects/Person.java
+edu/djc/interfaces/objects/Student.java
+edu/djc/interfaces/objects/Teacher.java
+edu/djc/interfaces/objects/Employee.java
+edu/djc/interfaces/objects/Retiree.java
 
 edu/djc/interfaces/Main.java
