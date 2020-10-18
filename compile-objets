@@ -1,3 +1,3 @@
 -d bin 
-src/objets/Personne.java 
-src/objets/Main.java
+edu/djc/objets/definitions/Personne.java 
+edu/djc/objets/Main.java

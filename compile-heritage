@@ -1,5 +1,5 @@
 -d bin
-src/heritage/Person.java
-src/heritage/Student.java
-src/heritage/Elderly.java
-src/heritage/Main.java
+edu/djc/heritage/Person.java
+edu/djc/heritage/Student.java
+edu/djc/heritage/Elderly.java
+edu/djc/heritage/Main.java

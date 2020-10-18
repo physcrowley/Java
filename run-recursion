@@ -1,2 +1,2 @@
 -cp bin
-recursion.BookStore
+edu.djc.recursion.BookStore

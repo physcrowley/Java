@@ -1,2 +1,2 @@
 -cp bin
-methods.Main
+edu.djc.methods.Main

@@ -1,2 +1,2 @@
 -cp bin
-interfaces.Main
+edu.djc.interfaces.Main

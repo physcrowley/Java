@@ -1,15 +1,15 @@
 -d bin
 
-src/interfaces/Working.java
-src/interfaces/Studying.java
-src/interfaces/WorkingHard.java
-src/interfaces/Retiring.java
-src/interfaces/Teaching.java
+edu/djc/interfaces/comportements/Working.java
+edu/djc/interfaces/comportements/Studying.java
+edu/djc/interfaces/comportements/WorkingHard.java
+edu/djc/interfaces/comportements/Retiring.java
+edu/djc/interfaces/comportements/Teaching.java
 
-src/interfaces/Person.java
-src/interfaces/Student.java
-src/interfaces/Teacher.java
-src/interfaces/Employee.java
-src/interfaces/Retiree.java
+edu/djc/interfaces/objets/Person.java
+edu/djc/interfaces/objets/Student.java
+edu/djc/interfaces/objets/Teacher.java
+edu/djc/interfaces/objets/Employee.java
+edu/djc/interfaces/objets/Retiree.java
 
-src/interfaces/Main.java
+edu/djc/interfaces/Main.java
