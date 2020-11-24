@@ -41,9 +41,9 @@ public class Concepts
         une valeur lors de la déclaration, ce qui s'appelle "l'initialisation". 
         Les trois types les plus utilisés sont les suivants :
         */
-        final int num = 0; // valeur entière
-        final String texte = "David"; // chaîne de caractères
-        final double valeur = 2.98; // valeur décimale
+        int num = 0; // valeur entière --> USAGE : compter
+        String texte = "David"; // chaîne de caractères --> USAGE : générale
+        double valeur = 2.98; // valeur décimale --> USAGE : calculer
 
         System.out.println(num + "\n" + texte + "\n" + valeur); // sortie au console
         
@@ -54,12 +54,21 @@ public class Concepts
         Logique : && (et), || (ou), ! (not)
         */
         System.out.println(3 == 1); // false
+        System.out.println(3 != 1); // true
+        System.out.println(!(3 == 1)); // true
         System.out.println(Math.random() * 10);
 
         /*
         CONDITIONS
-        if, else, else if
-        switch-case
+        if, else if, else --> USAGE : générale
+        switch-case --> USAGE : comparer avec une liste de choix fixe
+        */
+
+        /* STRUCTURE if / else if / else
+        <mot-clé> (<condition entre parenthèses>)
+        {
+            <déclarations>;
+        }
         */
         int A = 1;
         int B = 3;
@@ -76,7 +85,17 @@ public class Concepts
             System.out.println("A est plus grand que B");
         }
 
-        final String couleur = "vert";
+        /* STRUCTURE switch-case
+        switch (<variable>)
+        {
+            case <valeur1> : <déclarations>;
+            case <valeur2> : <déclarations>;
+            default : <déclarations>;
+        }
+
+        */
+
+        String couleur = "vert";
         switch (couleur)
         {
             case "rouge": 
@@ -88,6 +107,7 @@ public class Concepts
             case "bleu": 
             case "mauve":
                 System.out.println("une couleur haute fréquence");
+                break;
             default: 
                 System.out.println("ta couleur n'est pas dans la liste");
         }
@@ -95,22 +115,42 @@ public class Concepts
 
         /*
         BOUCLES
-        for -> Python = for i in range(10):
-        while
-        "for each" - for -> Python = for num in nums_list:
+        for --> USAGE : générale quand on connaît la quantité de répétitions
+        "for each" --> USAGE : pour lire les structures de données comme les tableaux et les listes
+        while --> USAGE : répétition générale (fin inconnue)
+        
         */
+
+        // FOR
+        // Structure :
+        // for (int i = <début>; i <condition de fin>; <opération pour changer i>) {}
         for (int i = 0; i < 5; i++)
         {
             System.out.println(i);
         }
+        /* Sortie
+        0
+        1
+        2
+        3
+        4
+        */
 
-        final int[] nums = {1, 1, 2, 3, 5, 8, 13, 21}; // fibonacci
-        for (final int e : nums) // "for each"
+
+        // FOR EACH
+        int[] nums = {1, 1, 2, 3, 5, 8, 13, 21}; // fibonacci
+        for (int e : nums)
         {
             System.out.print(e + " ");
         }
         System.out.println();
+        /* Sortie
+        1 1 2 3 5 8 13 21 
 
+        */
+
+
+        // WHILE
         double test = 0.0;
         // afficher tous les nombres aléatoires jusqu'à temps d'en avoir un >= 0.8
         while (test < 0.8)
