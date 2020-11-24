@@ -4,23 +4,23 @@ import edu.djc.interfaces.behaviours.*;
 
 public abstract class Person 
 {
-    // PROTECTED
+    // (par défaut > PACKAGE-PRIVATE)
     // champs et constructeurs accessibles seulement à l'intérieur du package
     // notamment par les classes filles
 
     /////////////////// Champs /////////////////////
 
-    protected String name = "";
-    protected int age = 0;
-    protected Working occupation = new Work();
+    String name = "";
+    int age = 0;
+    Working occupation = new Work();
 
-    protected static int people = 0; // variable de class (pas d'instance)
+    private static int people = 0; // variable de class > les instances n'auront pas ce champs
 
 
     /////////////////// Constructeurs /////////////////////
 
     /** Constructeur par défaut */
-    protected Person()
+    Person()
     {
         people++; // compte le nombre d'instances de Person
     }
@@ -31,7 +31,7 @@ public abstract class Person
      * @param n le nom de la Person
      * @param a l'age de la Person
      */
-    protected Person(String n, int a)
+    Person(String n, int a)
     {
         people++; // compte le nombre d'instances de Person
         this.name = n;
@@ -44,7 +44,7 @@ public abstract class Person
      * @param a l'age de la Person
      * @param o l'occupation de la Person
      */
-    protected Person(String n, int a, Working o)
+    Person(String n, int a, Working o)
     {
         people++; // compte le nombre d'instances de Person
         this.name = n;
@@ -115,8 +115,8 @@ public abstract class Person
     public String toString() 
     {
         String oc = String.valueOf(this.occupation.getClass()); // "class pack.age.s.to.ClassName"
-        int index = oc.lastIndexOf("."); // find last dot 
-        oc = oc.substring(index + 1); // get everything after the dot
+        oc = oc.substring(oc.lastIndexOf(".") + 1); // get everything after the last dot
+
         return "Name: " + this.name + ", Age: " + this.age + ", Occupation: " + oc;
-    };
+    }
 }
